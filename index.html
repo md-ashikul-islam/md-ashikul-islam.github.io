@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ashik's Blog - Personal thoughts, tech tutorials, and more">
+    <title>Home | Ashik's Blog</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title"><a href="index.html">Ashik's Blog</a></h1>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">◐</span>
+                </button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="knowledgebase.html">Knowledgebase</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="profile-image">
+                <img src="assets/images/profile.jpeg" alt="Ashik's Profile Picture">
+            </div>
+            <h2>Welcome to My Digital Space</h2>
+            <p>Thoughts on technology, tutorials, and everything in between.</p>
+        </section>
+
+        <section class="featured-post">
+            <!-- Featured post will be dynamically loaded here -->
+        </section>
+
+        <section class="posts-grid">
+            <h2 class="section-title">Recent Posts</h2>
+            <!-- Recent posts will be dynamically loaded here -->
+        </section>
+
+        <section class="categories-preview">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="category-grid">
+                <!-- Categories will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Ashik's Blog. All rights reserved.</p>
+            <p>Built with ♥ and published on GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/content-data.js"></script>
+    <script src="js/render-content.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

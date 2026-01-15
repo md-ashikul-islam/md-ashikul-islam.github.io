@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All blog posts - Ashik's Blog">
+    <title>Blog | Ashik's Blog</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title"><a href="index.html">Ashik's Blog</a></h1>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">◐</span>
+                </button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="knowledgebase.html">Knowledgebase</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="blog-list">
+            <h2 class="section-title">All Blog Posts</h2>
+
+            <div class="blog-controls" style="margin-bottom: 2rem;">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search posts..."
+                    style="width: 100%; max-width: 500px; padding: 0.8rem; border: 2px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); font-family: var(--font-mono); border-radius: 4px; margin-bottom: 1.5rem;"
+                >
+
+                <div class="blog-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="tech">Tech</button>
+                    <button class="filter-btn" data-filter="tutorial">Tutorial</button>
+                    <button class="filter-btn" data-filter="personal">Personal</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                </div>
+            </div>
+
+            <div class="posts-container">
+                <!-- Posts will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Ashik's Blog. All rights reserved.</p>
+            <p>Built with ♥ and published on GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/content-data.js"></script>
+    <script src="js/render-content.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

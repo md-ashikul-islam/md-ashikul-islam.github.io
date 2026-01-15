@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse posts by category - Ashik's Blog">
+    <title>Categories | Ashik's Blog</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title"><a href="index.html">Ashik's Blog</a></h1>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">◐</span>
+                </button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="knowledgebase.html">Knowledgebase</a></li>
+                    <li><a href="categories.html" class="active">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Browse by Category</h2>
+            <p>Explore content organized by topics</p>
+        </section>
+
+        <section id="tech" style="margin-bottom: 4rem;">
+            <h2 class="section-title">Technology</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.8;">Posts about software development, programming languages, and tech trends</p>
+            <!-- Tech posts will be dynamically loaded here -->
+        </section>
+
+        <section id="tutorial" style="margin-bottom: 4rem;">
+            <h2 class="section-title">Tutorials</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.8;">Step-by-step guides and hands-on learning experiences</p>
+            <!-- Tutorial posts will be dynamically loaded here -->
+        </section>
+
+        <section id="personal" style="margin-bottom: 4rem;">
+            <h2 class="section-title">Personal</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.8;">Personal experiences, reflections, and life in tech</p>
+            <!-- Personal posts will be dynamically loaded here -->
+        </section>
+
+        <section id="design" style="margin-bottom: 4rem;">
+            <h2 class="section-title">Design</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.8;">UI/UX design, visual aesthetics, and user experience</p>
+            <!-- Design posts will be dynamically loaded here -->
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Ashik's Blog. All rights reserved.</p>
+            <p>Built with ♥ and published on GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/content-data.js"></script>
+    <script src="js/render-content.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
